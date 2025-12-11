@@ -5,6 +5,50 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+
+    <!-- Light Theme Colors -->
+    <color name="primary">#86A873</color>
+    <color name="primary_variant">#6A994E</color>
+    <color name="background_light">#FDFBF7</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="text_light">#4B443C</color>
+    <color name="text_secondary_light">#666666</color>
+    <color name="green_light">#E9F4E5</color>
+    <color name="border_light">#EFEBE4</color>
+
+    <!-- Dark Theme Colors -->
+    <color name="background_dark">#1A1D1A</color>
+    <color name="surface_dark">#2A2928</color>
+    <color name="text_dark">#E5E3E0</color>
+    <color name="text_secondary_dark">#A0A0A0</color>
+    <color name="green_dark">#2A3A25</color>
+
+    <!-- Status Colors -->
+    <color name="success">#6A994E</color>
+    <color name="warning">#FF9800</color>
+    <color name="error">#F44336</color>
+
+    <color name="warning_light">#F8E0C0</color>
+    <color name="error_light">#FDD2D0</color>
+    <color name="pink_light_4">#FFCCE8</color>
+    <color name="cyan_light_4">#CCF3F2</color>
+    <color name="purple_light_4">#EADCFB</color>
+    <color name="blue_light_3">#CBE7FF</color>
+
+    <!-- Accent Colors -->
+    <color name="accent_yellow">#FFD54F</color>
+    <color name="accent_orange">#FFB74D</color>
+    <color name="accent_blue">#4FC3F7</color>
+    <color name="accent_purple">#D293FF</color>
+    <color name="accent_green">#81C784</color>
+    <color name="accent_red">#E57373</color>
+
+    
+    
+    
+    
+    <!-- Common -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
 </resources>

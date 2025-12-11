@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "369921698974",
+    "project_id": "gestion-habitos",
+    "storage_bucket": "gestion-habitos.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369921698974:android:4ba6c0fff55ed908ea1f8f",
+        "android_client_info": {
+          "package_name": "com.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR-BTOOOS08oxem0bSL9AwblCilo3QJJY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
