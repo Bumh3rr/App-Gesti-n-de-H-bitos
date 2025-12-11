@@ -1,3 +1,58 @@
 <resources>
-    <string name="app_name">App-Gesti-n-de-H-bitos</string>
+    <string name="app_name">BackToMe</string>
+    <string name="frase_1">El viaje de mil millas comienza con un solo paso.</string>
+    <string name="welcome_back">Bienvenido de nuevo</string>
+    <string name="log_in_to_continue_your_journey">Inicia sesión para continuar tu viaje</string>
+    <string name="register_label_login">Registrar</string>
+    <string name="don_t_have_an_account">¿No tienes una cuenta?</string>
+    <string name="log_in">Inicio de Sesión</string>
+    <string name="password">Contraseña</string>
+    <string name="email">Correo</string>
+    <string name="tu_example_com">tu@example.com</string>
+    <string name="forgot_password">Olvidate tu Contraseña?</string>
+
+    <string name="sign_in">Iniciar Sesión</string>
+    <string name="create_account">Crear una Cuenta</string>
+    <string name="confirm_password">Confirmar Contraseña</string>
+    <string name="sign_up">Registrar</string>
+    <string name="already_have_an_account">¿Ya tienes una cuenta?</string>
+    <string name="create_account_title">Crear Cuenta</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="let_s_create_your_wellness_account">Vamos a crear tu cuenta de bienestar.</string>
+    <string name="agregar_editar_h_bito">Agregar / Editar Hábito</string>
+    <string name="habit_name">Nombre del Hábito</string>
+    <string name="e_g_morning_run">Ej: Correr</string>
+    <string name="e_g_15_minutes_around_the_park">Ej: 15 minutos alrededor del parque</string>
+    <string name="short_description">Breve descripción</string>
+    <string name="frecuencia">Frecuencia</string>
+    <string name="save">Guardar</string>
+    <string name="mark_as_completed_today">Marcar como completado hoy</string>
+    <string name="history">Historial</string>
+    <string name="ver_todo">Ver todo</string>
+    <string name="racha_actual">Racha actual</string>
+    <string name="mejor_racha">Mejor racha</string>
+    <string name="terminaci_n">Terminación</string>
+    <string name="configuraci_n_y_recordatorios">Configuración y Recordatorios</string>
+    <string name="recordatorios_diarios">Recordatorios diarios</string>
+    <string name="recibe_una_notificaci_n_cada_d_a">Recibe una notificación cada día.</string>
+    <string name="hora_del_recordatorio">Hora del recordatorio</string>
+    <string name="elige_cu_ndo_quieres_que_te_lo_recordemos">Elige cuándo quieres que te lo recordemos.</string>
+    <string name="mis_h_bitos">Mis Hábitos</string>
+    <string name="todos_los_h_bitos_completados_hoy">Todos los hábitos completados hoy.</string>
+    <string name="incre_ble_progreso">¡Increíble progreso!</string>
+    <string name="terminado">Terminado</string>
+    <string name="los_h_bitos_de_hoy">Los hábitos de hoy</string>
+    <string name="guardar_cambios">Guardar cambios</string>
+
+    <!-- Reminder Times -->
+    <string-array name="reminder_times">
+        <item>07:00 AM</item>
+        <item>08:00 AM</item>
+        <item>09:00 AM</item>
+        <item>10:00 AM</item>
+        <item>12:00 PM</item>
+        <item>05:00 PM</item>
+        <item>08:00 PM</item>
+    </string-array>
+
 </resources>

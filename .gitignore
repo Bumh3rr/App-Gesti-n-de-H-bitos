@@ -13,3 +13,13 @@
 .externalNativeBuild
 .cxx
 local.properties
+.idea/vcs.xml
+.idea/runConfigurations.xml
+.idea/misc.xml
+.idea/gradle.xml
+.idea/deploymentTargetSelector.xml
+.idea/copilot.data.migration.edit.xml
+.idea/copilot.data.migration.ask2agent.xml
+.idea/copilot.data.migration.ask.xml
+.idea/copilot.data.migration.agent.xml
+.idea/AndroidProjectSystem.xml

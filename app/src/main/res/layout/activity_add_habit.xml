@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background_light"
+    android:id="@+id/main"
+    tools:context=".ui.view.AddHabitActivity">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingStart="10dp"
+            android:src="@drawable/ic_arrow_back"
+            android:background="@drawable/bg_circle_button_semi"
+            app:tint="@color/text_light"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/agregar_editar_h_bito"
+            android:textSize="18sp"
+            android:textColor="@color/text_light"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/llHeader"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Habit Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/habit_name"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary_light"
+                android:fontFamily="@font/poppins_medium"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilHabitName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeColor="@color/border_light"
+                app:boxBackgroundColor="@color/surface_light"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                android:layout_marginTop="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etHabitName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/e_g_morning_run"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingVertical="16dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/short_description"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary_light"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="24dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeColor="@color/border_light"
+                app:boxBackgroundColor="@color/surface_light"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                android:layout_marginTop="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/e_g_15_minutes_around_the_park"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:gravity="top"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingVertical="16dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Frequency -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/frecuencia"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary_light"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="24dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilFrequency"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeColor="@color/border_light"
+                app:boxBackgroundColor="@color/surface_light"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                android:layout_marginTop="8dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actvFrequency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:text="A diario"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingVertical="16dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <!-- Save Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/save"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_bold"
+                app:backgroundTint="@color/primary_variant"
+                app:cornerRadius="24dp"
+                android:layout_marginTop="40dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
