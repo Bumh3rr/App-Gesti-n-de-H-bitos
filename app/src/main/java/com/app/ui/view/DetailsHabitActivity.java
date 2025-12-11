@@ -2,12 +2,14 @@ package com.app.ui.view;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -23,7 +25,8 @@ import com.google.android.material.progressindicator.CircularProgressIndicator;
 
 public class DetailsHabitActivity extends AppCompatActivity {
     private ImageButton btnBack, btnEdit, btnDelete;
-    private TextView tvHabitName, tvProgress, tvCurrentStreak, tvBestStreak;
+    private TextView tvHabitName, tvDescription, tvFrequency, tvProgress, tvCurrentStreak, tvBestStreak;
+    private CardView cvDescription;
     private CircularProgressIndicator progressCircle;
     private RecyclerView rvHistory;
     private MaterialButton btnMarkComplete;
@@ -55,14 +58,17 @@ public class DetailsHabitActivity extends AppCompatActivity {
     private void initViews() {
         btnBack = findViewById(R.id.btnBack);
         btnEdit = findViewById(R.id.btnEdit);
+        btnDelete = findViewById(R.id.btnDelete);
         tvHabitName = findViewById(R.id.tvHabitName);
+        tvDescription = findViewById(R.id.tvDescription);
+        tvFrequency = findViewById(R.id.tvFrequency);
+        cvDescription = findViewById(R.id.cvDescription);
         tvProgress = findViewById(R.id.tvProgress);
         tvCurrentStreak = findViewById(R.id.tvCurrentStreak);
         tvBestStreak = findViewById(R.id.tvBestStreak);
         progressCircle = findViewById(R.id.progressCircle);
         rvHistory = findViewById(R.id.rvHistory);
         btnMarkComplete = findViewById(R.id.btnMarkComplete);
-        btnDelete = findViewById(R.id.btnDelete);
 
         // Configurar el CircularProgressIndicator
         progressCircle.setMax(100);
@@ -98,6 +104,19 @@ public class DetailsHabitActivity extends AppCompatActivity {
             if (habit != null) {
                 currentHabit = habit;
                 tvHabitName.setText(habit.getName());
+
+                // Mostrar descripción si existe
+                if (habit.getDescription() != null && !habit.getDescription().trim().isEmpty()) {
+                    tvDescription.setText(habit.getDescription());
+                    cvDescription.setVisibility(View.VISIBLE);
+                } else {
+                    cvDescription.setVisibility(View.GONE);
+                }
+
+                // Mostrar frecuencia
+                tvFrequency.setText(habit.getFrequency());
+
+                // Mostrar rachas
                 tvCurrentStreak.setText(habit.getCurrentStreak() + " días");
                 tvBestStreak.setText(habit.getBestStreak() + " días");
 

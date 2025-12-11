@@ -60,7 +60,9 @@ public class HabitRepository {
 
         executorService.execute(() -> {
             try {
-                HabitEntity habit = habitDao.getHabitById(habitId).getValue();
+                // Obtener el hábito de forma síncrona
+                HabitEntity habit = habitDao.getHabitByIdSync(habitId);
+
                 if (habit != null) {
                     habit.setName(name);
                     habit.setDescription(description);
